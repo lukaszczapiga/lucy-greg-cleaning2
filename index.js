@@ -1,16 +1,21 @@
 var express = require('express');
+var path = require('path');
 var app = express();
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
 
-// views is directory for all template files
-app.set('views', __dirname + '/views');
-app.set('view engine', 'ejs');
+//API routes
+app.post('/api/send-mail', function(req, res) {
 
-app.get('/', function(request, response) {
-  response.render('pages/index');
+});
+
+// frontend routes
+// route to handle all angular requests
+app.get('/*', function(req, res) {
+    res.sendFile('index.html', { root: path.join(__dirname, '/public') });
+    //res.sendFile('../app/public/index.html');
 });
 
 app.listen(app.get('port'), function() {

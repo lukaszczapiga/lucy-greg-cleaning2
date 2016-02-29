@@ -1,0 +1,17 @@
+{
+  "name": "starter-node-angular",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "bootstrap": "latest",
+    "angular-route": "latest",
+    "angular-bootstrap": "latest",
+    "font-awesome": "latest",
+    "angular-ui-router": "latest",
+    "angular-easyfb": "latest",
+    "angular-ui-map": "latest"
+  },
+  "resolutions": {
+    "angular": "1.4.8"
+  }
+}
