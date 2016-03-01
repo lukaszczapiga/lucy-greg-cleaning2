@@ -9,7 +9,8 @@
     "font-awesome": "latest",
     "angular-ui-router": "latest",
     "angular-easyfb": "latest",
-    "angular-ui-map": "latest"
+    "angular-ui-map": "latest",
+    "angular-ui-event": "latest"
   },
   "resolutions": {
     "angular": "1.4.8"

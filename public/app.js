@@ -1,4 +1,4 @@
-var app = angular.module('stronka', ['ngRoute', 'ui.map', 'ui.bootstrap', 'ngSocial', 'ezfb', 'menuControllers', 'contactControllers', 'mailServices']);
+var app = angular.module('stronka', ['ngRoute', 'ui.map', 'ui.bootstrap', 'ezfb', 'menuControllers', 'contactControllers', 'mailServices']);
 
 app.config(['$routeProvider', '$locationProvider', 'ezfbProvider',
 function($routeProvider, $locationProvider, ezfbProvider) {
@@ -10,11 +10,11 @@ function($routeProvider, $locationProvider, ezfbProvider) {
 	$locationProvider.html5Mode(true);
 
 	$routeProvider.when('/main', {
-		templateUrl : 'partials/main.html',
+		templateUrl : 'partials/main.html'
 	}).when('/contact', {
-		templateUrl : 'partials/contact.html',
+		templateUrl : 'partials/contact.html'
 	}).when('/services', {
-		templateUrl : 'partials/services.html',
+		templateUrl : 'partials/services.html'
 	}).otherwise({
 		redirectTo : '/main'
 	});

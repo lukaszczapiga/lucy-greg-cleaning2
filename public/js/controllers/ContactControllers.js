@@ -33,8 +33,8 @@ function($scope) {
 contactControllers.controller('ContactCtrl', ['$scope', 'MailService',
 function($scope, MailService) {
 	$scope.result = 'hidden';
-	$scope.resultMessage
-	$scope.formData
+	$scope.resultMessage= '';
+	$scope.formData = {};
 	//formData is an object holding the name, email, subject, and message
 	$scope.submitButtonDisabled = false;
 	$scope.submitted = false;
